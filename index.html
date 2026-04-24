@@ -64,7 +64,7 @@ html { scroll-behavior: smooth; }
 /* ── base ── */
 body {
   font-family: var(--sans);
-  font-size: 14px;
+  font-size: 15px;
   color: var(--ink);
   background: var(--bg);
   min-height: 100vh;
@@ -81,8 +81,8 @@ input[type=file] { display: none; }
   top: 0;
   z-index: 100;
   background: rgba(250,249,246,.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
   height: 56px;
   display: flex;
@@ -580,8 +580,8 @@ input[type=file] { display: none; }
 let chars, cur = 0, lbIdx = -1;
 try { chars = JSON.parse(localStorage.getItem('mycloset_v3')); } catch(e) {}
 if (!chars) chars = [
-  { name: '角色一', costumes: [] },
-  { name: '角色二', costumes: [] }
+  { name: '月曦', costumes: [] },
+  { name: '薩恩', costumes: [] }
 ];
 
 function save() {
